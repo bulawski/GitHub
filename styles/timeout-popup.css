@@ -1,0 +1,42 @@
+
+
+
+#pop-up{
+    /* 
+    begin with not showing the donate box    
+        eg: display:none; 
+    */
+
+    position: relative;
+    bottom:150px;
+    left:30%;
+    background-color: var(--main-color);
+    color:white;
+    padding:30px;
+    border-top:solid 5px darkkhaki;
+    width: 650px;;
+    height:30%;
+   
+   
+}
+#pop-up a {    
+    background-color: var(--main-color);
+    color:var(--light-color);
+    border:solid 2px var(--second-color);
+    border-radius:5px;
+    padding:5px;
+}
+#close-pop-up{
+    position:absolute;    
+    top:20px;
+    right:20px;
+
+    cursor:pointer;
+}
+#pop-up a:hover{
+    background-color: var(--light-color);
+    color:var(--main-color);
+}
+.hidden {
+    display: none;
+  }

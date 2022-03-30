@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PROJECT|Jack Bulawski</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/timeout-popup.css">
+ 
+    <script src="scripts/script.js" defer></script>	
+    <script src="scripts/set-timeout-popup.js" defer></script>
+    
+  </head>
+  <body>
+    <div id="wrapper">
+    <main> 
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">You</h2>
+        <p class="score" id="score--0">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Foe</h2>
+        <p class="score" id="score--1">0</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="images/dice-5.png" alt="Playing dice1" class="dice--1" />
+      <img src="images/dice-4.png" alt="Playing dice2" class="dice--2" />
+      <img src="images/dice-2.png" alt="Playing dice3" class="dice--3" />
+      <img src="images/dice-3.png" alt="Playing dice4" class="dice--4" />
+
+     <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📖 Guide</button>
+    </main>
+    <br><br>
+  
+      <div id="pop-up">
+            
+        <h2>How to play:</h2>
+        <br>
+    <li>To start, click the "Roll Dice" button.</li>
+    <li>To advance to the next round, click the "Roll Dice" button again.</li>     
+    <li>After three rounds, the gamme is over and the final score is calculated.</li>   
+    <li>If you want to play again, click the "New Game" button or refresh the page.</li>                
+    <br>
+    <hr></hr>
+    <h2>Rules:</h2>
+    <br>
+<li>Your score for that round will be based on the sum of the dice.</li>     
+<li>If you roll doubles (e.g. a 3 and a 3)then your score is multiplied by 2.</li>   
+<li>Rolling a 1 will give you a score of 0 for that round.</li>
+<li>The player who has the most points at the end of three rounds is the winner.</li>                
+
+        <a id="close-pop-up">&#10005;</a>
+      
+</div>  
+    </div>
+  </body>
+</html>
